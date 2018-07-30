@@ -2,7 +2,7 @@ library(httr)
 library(jsonlite)
 library(ggplot2)
 options(stringsAsFactors = FALSE)
-#Caso não deseje que a função busque certs valores, input = 0
+#Caso n?o deseje que a fun??o busque certs valores, input = 0
 summoner <- function(s.id, acc.id){
 url.lol <- 'https://br1.api.riotgames.com/api/lol/na/v1.4/summoner/by-name/RiotSchmick?api_key=RGAPI-a7791de7-2301-4864-ad26-e738e334f152'
 r <- '/recent'  
@@ -49,12 +49,6 @@ creeps.med
 barplot(num.creep, main="Creeps por Min.", 
         xlab="Delta t", ylab='Creeps')
 
-
-felipe <- c(acc.id = 210444869, s.id=0)
-sergio<- c(acc.id = 205441649 , s.id= )
-manza <- c(acc.id = , s.id=)
-neto <- c(acc.id = , s.id=)
-fer <- c(acc.id = , s.id=)
 
 for(i in 1:20){
   creeps.med <<- list(length=20)
